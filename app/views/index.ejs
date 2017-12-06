@@ -2,27 +2,34 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>MY APP</title>
+  <title>MY APP WE GOT USERS!</title>
+  <link rel="stylesheet" href="application.css">
+  <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css"> <!-- load bootstrap css -->
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css"> <!-- load fontawesome -->
   <style>
     body {
       margin: 0;
+      padding-top: 80px;
     }
   </style>
 </head>
 <body>
-<canvas>
-<h1>HELLO WORLD!</h1>
-</canvas>
-<script src="canvas.js"></script>
-  <form action="/notes" method="POST">
-    <input type="text" placeholder="name" name="name">
-    <input type="text" placeholder="quote" name="quote">
-    <button type="submit">Submit</button>
-  </form>
-  <div>
-  <h2>Replace last note</h2>
-  <button id="update"> update the note!!!! </button>
-</div>
+ <!--  <div id="container">
+  <canvas></canvas>
+  <div id="overlay"></div>
+</div> -->
+  <script src="canvas.js"></script>
+  <div class="container">
 
+    <div class="jumbotron text-center">
+        <h1><span class="fa fa-lock"></span> Node Authentication</h1>
+
+        <p>Login or Register with:</p>
+
+        <a href="/login" class="btn btn-default"><span class="fa fa-user"></span> Local Login</a>
+        <a href="/signup" class="btn btn-default"><span class="fa fa-user"></span> Local Signup</a>
+    </div>
+
+</div>
 </body>
 </html>
