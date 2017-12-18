@@ -1,12 +1,105 @@
+/*body {
+ background: #555659;
+}*/
+
 body {
-  background: #dddddd;
+  background: #2c2e33;
+
+}
+
+.cloud {
+  width: 180px;
+  height: 120px;
+  position: absolute;
+  -webkit-animation: wind infinite; /* Safari 4+ */
+  -webkit-animation-timing-function: linear;
+}
+
+.cloud div {
+  background: white;
+  position: absolute;
+
+}
+
+.cloud-1 {
+  width: 90%;
+  height: 57px;
+  bottom: 0px;
+  right: 0px;
+  border-radius: 30px;
+}
+
+.cloud-2 {
+  width: 80px;
+  height: 80px;
+  top: 8px;
+  right: 25px;
+  border-radius: 60px;
+}
+
+.cloud-3 {
+  width: 70px;
+  height: 70px;
+  left: 0px;
+  bottom: 0px;
+  border-radius: 100px;
+}
+
+.cloud-4 {
+  width: 50px;
+  height: 50px;
+  top: 25px;
+  left: 35px;
+  border-radius: 60px;
+}
+
+.cloud-no-2 {
+  -webkit-animation-name: wind-right-offset, small;
+}
+
+.cloud-no-3 {
+  -webkit-animation-name: wind-left-offset;
+}
+
+.cloud-large {
+    -webkit-transform: scale(1.25) rotateY(180deg);
+    -webkit-animation-duration: 139s;
+}
+
+.cloud-medium {
+  -webkit-animation-duration: 100s;
+}
+
+.cloud-small {
+  -webkit-animation-duration: 100s;
+  -webkit-transform: scale(0.7);
+}
+
+@-webkit-keyframes small {
+  0, 100% { -webkit-transform: scale(0.7); }
+}
+
+@-webkit-keyframes wind {
+  0%   { -webkit-transform: translateX(100px); }
+  100% { -webkit-transform: translateX(2100px); }
+}
+
+@-webkit-keyframes wind-right-offset {
+  0%   { -webkit-transform: translateX(700px); }
+  100% { -webkit-transform: translateX(2100px); }
+}
+
+@-webkit-keyframes wind-left-offset {
+  0%   { -webkit-transform: translateX(-150px); }
+  100% { -webkit-transform: translateX(2100px); }
 }
 
 #canvas {
   margin-left: 10px;
   margin-top: 10px;
-  background: #ffffff;
+  /*background: #ffffff;*/
   border: thin solid #aaaaaa;
+  position: absolute;
 }
 
 #signup-form {
@@ -99,3 +192,4 @@ body {
   background: #ffffff;
   border: thin solid #aaaaaa;
 }
+
